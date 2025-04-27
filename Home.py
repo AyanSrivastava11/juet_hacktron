@@ -6,12 +6,6 @@ import team  # Your existing Team.py
 # Page Config (ONLY here!)
 st.set_page_config(page_title="Textbook to Audio Converter", page_icon="📚", layout="wide")
 
-# Function to load AboutUs.html
-def load_html_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        html_content = file.read()
-    return html_content
-
 # ---- Sidebar Navigation ----
 st.sidebar.title("📚 Navigation")
 page = st.sidebar.radio("Go to", ["🏠 Home", "🛠 App", "👥 About Us"])

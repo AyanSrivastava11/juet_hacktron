@@ -2,7 +2,6 @@ import streamlit as st
 import pdfplumber
 from googletrans import Translator
 from gtts import gTTS
-import os
 from io import BytesIO
 import concurrent.futures
 
@@ -38,7 +37,27 @@ def main():
                 ("gu", "Gujarati"),
                 ("ml", "Malayalam"),
                 ("mr", "Marathi"),
-                ("bn", "Bengali")
+                ("bn", "Bengali"),
+                ("pa", "Punjabi"),
+                ("ur", "Urdu"),
+                ("or", "Odia"),
+                ("en", "English"),
+                ("es", "Spanish"),
+                ("fr", "French"),
+                ("de", "German"),
+                ("it", "Italian"),
+                ("ja", "Japanese"),
+                ("zh-cn", "Chinese (Simplified)"),
+                ("zh-tw", "Chinese (Traditional)"),
+                ("ar", "Arabic"),
+                ("pt", "Portuguese"),
+                ("ru", "Russian"),
+                ("tr", "Turkish"),
+                ("th", "Thai"),
+                ("vi", "Vietnamese"),
+                ("id", "Indonesian"),
+                ("sw", "Swahili"),
+                ("fi", "Finnish"),
             ), format_func=lambda x: x[1])
 
             if st.button("Generate Full Audio 🚀"):

@@ -32,33 +32,6 @@ if page == "🏠 Home":
     st.markdown("""
         This project aims to convert textbooks into audio format in various regional languages. 
         It uses **Google Text-to-Speech** for audio generation and **Streamlit** for the web interface.
-        
-        ### 📚 Features:
-        - Upload PDF files for text extraction 📄
-        - Select the target language for translation 🌍
-        - Text split into manageable chunks for easier translation 💬
-        - Translate each chunk to the selected language using Google Translate 🌐
-        - Join translated chunks for a seamless reading experience 🔗
-        - Convert the final translated text to high-quality audio using gTTS 🎧
-        - Stream live audio for instant preview 🎶
-        - Downloadable audio file as `.mp3` 📥
-        - Optionally save the audio locally on the server 💾
-        - User-friendly interface with Streamlit for easy navigation and interaction 🖥️
-
-
-        ### 🚀 Technologies Used:
-        - Python
-        - Streamlit
-        - Google Text-to-Speech (gTTS)
-        - pdfplumber (for PDF text extraction)
-
-                         
-        ### 🌟 Future Enhancements:
-        - Support for more languages and dialects 🌐
-        - User authentication and profile management 🔒
-        - Integration with cloud storage for saving audio files ☁️
-        - Mobile app version for on-the-go access 📱
-        - Analytics dashboard for tracking usage and performance 📊
     """)
 elif page == "🛠 App":
     app.main()

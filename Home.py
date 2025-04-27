@@ -1,6 +1,5 @@
 import streamlit as st
 import app  # Your existing App.py
-import team  # Your existing Team.py
 import os
 
 # Page Config (ONLY here!)

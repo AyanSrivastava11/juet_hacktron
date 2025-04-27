@@ -103,7 +103,7 @@ def show_team_page():
             "name": "Ayan Srivastava",
             "role": "Team Leader",
             "quote": "The best error message is the one that never shows up.",
-            "image": "https://randomuser.me/api/portraits/women/1.jpg",
+            "image": "https://media.licdn.com/dms/image/v2/D4D03AQG8LaH9lnxJ8Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1689078172220?e=1751500800&v=beta&t=VIHOOxnB0Q78XlDQoYSonPqC4K8xAFpU5Q8voNw77DI",
             "linkedin": "https://www.linkedin.com/in/ayan-srivastava-017a89259/",
             "github": "https://github.com/AyanSrivastava11"
         },
@@ -111,7 +111,7 @@ def show_team_page():
             "name": "Aditi Singh",
             "role": "Team Member",
             "quote": "Computers are fast; programmers keep it slow",
-            "image": "https://randomuser.me/api/portraits/men/2.jpg",
+            "image": "https://media.licdn.com/dms/image/v2/D4D03AQEz1Pq8446DEQ/profile-displayphoto-shrink_400_400/B4DZRlMFVeHIAg-/0/1736864454740?e=1751500800&v=beta&t=1UV6Sxtvb1iXwy4NXzZN4VhRxfVKAYzXNQEQE9_TIO0",
             "linkedin": "https://www.linkedin.com/in/aditi-singh-266456253",
             "github": "https://github.com/AditisS12"
         },
@@ -119,7 +119,7 @@ def show_team_page():
             "name": "Aditi Gupta",
             "role": "Team Member",
             "quote": "Software is a great combination of artistry and engineering.",
-            "image": "https://randomuser.me/api/portraits/women/3.jpg",
+            "image": "https://media.licdn.com/dms/image/v2/D5603AQGnk1vrfCWxwA/profile-displayphoto-shrink_400_400/B56ZRlLwIRHoAk-/0/1736864369348?e=1751500800&v=beta&t=3rOCI4j0yXHdWPMNLwzUndIqGDNBEOzvIBHqdYyit7w",
             "linkedin": "https://www.linkedin.com/in/guptaaditi18",
             "github": "https://github.com/Aditi-code123"
         }

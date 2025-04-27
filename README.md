@@ -1,5 +1,8 @@
 # juet_hacktron -  Team Code_red
 
 <br>Team Lead : Ayan Srivastava</br>
-Team members : Aditi Singh
-             : Aditi Gupta   
+<p>Team Members:</p>
+<ul>
+    <li>Aditi Singh</li>
+    <li>Aditi Gupta</li>
+</ul>  

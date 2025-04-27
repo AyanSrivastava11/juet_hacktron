@@ -1,4 +1,3 @@
- 
 import streamlit as st
 import pdfplumber
 from googletrans import Translator
@@ -6,6 +5,8 @@ from gtts import gTTS
 import os
 import tempfile
 import uuid
+import zipfile
+from io import BytesIO
 
 # Set Streamlit page config
 st.set_page_config(page_title="Textbook to Audio Lessons", page_icon="📚", layout="wide")
@@ -65,6 +66,7 @@ if uploaded_file is not None:
 
             # Temporary folder to store audio files
             temp_dir = tempfile.mkdtemp()
+            audio_files = []
 
             st.success(f"Total {len(chunks)} bite-sized lessons created!")
 
@@ -76,8 +78,9 @@ if uploaded_file is not None:
 
                     # Generate audio
                     tts = gTTS(text=translated_text, lang=lang[0])
-                    filename = os.path.join(temp_dir, f"lesson_{idx+1}_{uuid.uuid4().hex}.mp3")
+                    filename = os.path.join(temp_dir, f"lesson_{idx+1}.mp3")
                     tts.save(filename)
+                    audio_files.append(filename)
 
                     # Display audio player
                     st.subheader(f"Lesson {idx+1}")
@@ -88,5 +91,19 @@ if uploaded_file is not None:
 
             st.success("All audio lessons are ready! 🎧")
 
+            # --- New: Create ZIP File ---
+            if audio_files:
+                zip_buffer = BytesIO()
+                with zipfile.ZipFile(zip_buffer, "w") as zip_file:
+                    for file_path in audio_files:
+                        zip_file.write(file_path, arcname=os.path.basename(file_path))
+                zip_buffer.seek(0)
+
+                st.download_button(
+                    label="📥 Download All Lessons as ZIP",
+                    data=zip_buffer,
+                    file_name="audio_lessons.zip",
+                    mime="application/zip"
+                )
 else:
     st.warning("Please upload a PDF textbook file to start.")

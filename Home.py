@@ -34,4 +34,4 @@ elif page == "🛠 App":
 
 elif page == "👥 About Us":
     st.title("👥 About Us")
-    team.main()
+    team.show_team_page()

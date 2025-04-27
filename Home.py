@@ -1,6 +1,7 @@
 import streamlit as st
 import app  # Your existing App.py
 import os
+import team  # Your existing Team.py
 
 # Page Config (ONLY here!)
 st.set_page_config(page_title="Textbook to Audio Converter", page_icon="📚", layout="wide")
@@ -32,11 +33,11 @@ if page == "🏠 Home":
 
         ---
         """)
-    st.image("https://cdn.pixabay.com/photo/2017/01/31/19/15/book-2022464_960_720.png", width=600)
+    # st.image("https://cdn.pixabay.com/photo/2017/01/31/19/15/book-2022464_960_720.png", width=600)
 
 elif page == "🛠 App":
     app.main()
 
-# elif page == "👥 About Us":
-#     st.title("👥 About Us")
-#     team.main()
+elif page == "👥 About Us":
+    st.title("👥 About Us")
+    team.main()

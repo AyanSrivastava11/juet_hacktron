@@ -7,7 +7,7 @@ import team  # Your existing Team.py
 st.set_page_config(page_title="Textbook to Audio Converter", page_icon="📚", layout="wide")
 
 # ---- Sidebar Navigation ----
-st.sidebar.title("📚 Navigation")
+st.sidebar.title("📚 Menu")
 page = st.sidebar.radio("Go to", ["🏠 Home", "🛠 App", "👥 About Us"])
 
 # ---- Page Routing ----
